@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Streetコラジェネレータ</title>
+        <script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="./streetcollage.js"></script>
+        <style type="text/css">
+        <!--
+            html, body {
+                width: 510px;
+                margin: 5px 5px;
+            }
+        -->
+        </style>
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <p style="width: 500px;">
+        <span style="font-weight: bold; font-size: 18px;">○○しちゃったか〜 ジェネレータ<br /><br /></span>
+        <span style="font-size: smaller;">つくったひと&nbsp;<a href="http://twitter.com/keisei_1092">&#64;keisei_1092</a><br />
+            元ネタ&nbsp;<a href="http://twitter.com/Street_DTM">&#64;Street_DTM</a><br /><br />
+        参考にさせていただいたもの&nbsp;<a href="http://wood-roots.com/sample/generator/">CreateJS(EaselJS)による画像ジェネレータサンプル</a></span>
+        </p>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-related="Street_DTM">ツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br />
+        <dl class="table">
+            <dt>
+                <input type="text" name="txt" id="txt" size="50" maxlength="45" placeholder="Massive買っちゃったか〜" /><br />
+                45文字まで入力できます
+            </dt>
+        </dl>
+        <div class="btn">
+            <button id="update">画像生成</button>
+            <form action="./img.php" method="post" id="saveform">
+                <button id="save">生成したのを画像として保存</button>
+            </form>
+        </div>
+        
+        <!-- output -->
+        <div class="module">
+            <h2>結果</h2>
+            <!-- width, height parameters are nesessary -->
+            <canvas id="result" width="500" height="500"></canvas>
+        </div>
+    </body>
+</html>

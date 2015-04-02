@@ -1,0 +1,137 @@
+@charset = 'UTF-8';
+
+* {
+    font-family: 'HelveticaNeue-Light', 'Hiragino Kaku Gothic W1', 'Helvetica', 'Hiragino Kaku Gothic';
+    font-weight: 100;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+dl {
+    margin: 0px;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    
+    -webkit-text-size-adjust: 100%;
+    background-image: url("images/paper_fibers.png");
+    
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0px 0px 3px rgba(100, 100, 100, 1);
+    color: rgba(255, 255, 255, 1.0);
+}
+
+wrapper {
+    
+}
+
+.item {
+    color: rgba(255, 255, 255, 1.0);
+    padding: 0 5px;
+    font-size: x-large;
+}
+
+.titem {
+    display: none;
+}
+
+.gray {
+    color: #AAA;
+}
+
+#item1 {
+    background-color: rgba(22, 160, 133, 0.60);
+}
+
+#biography {
+    background-color: rgba(22, 160, 133, 0.20);
+}
+
+#item2 {
+    background-color: rgba(39, 174, 96, 0.60);
+}
+
+#works {
+    background-color: rgba(39, 174, 96, 0.20);
+}
+
+#item3 {
+    background-color: rgba(41, 128, 185, 0.60);
+}
+
+#gallery {
+    background-color: rgba(41, 128, 185, 0.20);
+}
+
+#item4 {
+    background-color: rgba(142, 68, 173, 0.60);
+}
+
+#misc {
+    background-color: rgba(142, 68, 173, 0.20);
+}
+
+#item5 {
+    background-color: rgba(44, 62, 80, 0.60);
+}
+
+#contact {
+    background-color: rgba(44, 62, 80, 0.20);
+}
+
+footer {
+    text-align: center;
+}
+
+.social-button {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+    position: relative;
+    left: 50%;
+}
+
+.social-button li {
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0;
+    display:inline-block;
+    vertical-align:bottom;
+    text-align:left;
+    line-height:20px;
+    width:100px;
+    height:20px;
+    padding:0;
+    margin:2px;
+    position: relative;
+    left: -137px;
+}
+
+.social-button li div {
+	display: inline;
+}
+
+.social-button:before,
+.social-button:after {
+	content: " ";
+	display: table;
+}
+
+.social-button:after {
+	clear: both;
+}
+
+.social-button {
+	*zoom: 1;
+}
+
+.social-button iframe.twitter-share-button {
+    width: 90px !important;
+}

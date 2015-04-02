@@ -1,0 +1,59 @@
+﻿/*reset
+========================================== */
+*{margin:0; padding:0;}
+section,article,aside,footer,header,hgroup,nav,figure,figcaption,summary { display: block; }
+body {font: normal 0.9em arial,"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ ゴシック","Osaka",sans-serif;
+color: #FFF;
+line-height: 1.3;}
+a { color: #FFF; text-decoration: none; outline: none;}
+a:hover { color: #8A9Dd6;}
+
+/*background-image fit screen
+========================================== */
+html{
+	min-height: 100%; /* html要素をウィンドウサイズにフィット */
+
+	background: url('../images/teaser01_131116.png') no-repeat center; /* 背景画像をhtml要素にcenter表示 */
+
+	background-size: cover; /* 背景画像をhtml要素にフィット */
+}
+
+/*page layout
+========================================== */
+section {
+	float: right;
+    height: 100%;
+	margin: 5% auto;
+	padding: 20px 3%;
+	width: 40%;
+	background-color: rgba(0,0,0, 0.5);
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#88000000', EndColorStr='#88000000');
+    font-size:small;
+}
+
+p,ul,ol {
+	padding-left: 15px;
+}
+footer {
+	position: fixed;
+	_position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 13px 20px;
+	background: #000000;
+}
+
+#fade_button{
+border:#A9A9A9 0px solid;
+padding:8px 10px 7px 10px;
+font-weight:lighter;
+color:#42B8FF;
+font-size:12px;
+<!--text-shadow:0 0px 3px #696969;-->
+cursor:pointer;
+background: #F3F3F3;
+<!--background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF<!--#A9A9A9-->), to(#FFFFFF<!--#696969-->));-->
+<!--background: -moz-linear-gradient(top, #FFFFFF<!--#A9A9A9-->, #FFFFFF <!--#696969-->);-->
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+}

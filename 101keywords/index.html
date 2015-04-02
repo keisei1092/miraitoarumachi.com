@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My 101 Keywords</title>
+    <script src="easeljs-0.8.0.min.js"></script>
+    <script src="tweenjs-0.6.0.min.js"></script>
+    <script>
+      var stage;
+      
+      function init() {
+      var canvasElement = document.getElementById("demoCanvas");
+      var w = canvasElement.width;
+      var h = canvasElement.height;
+      stage = new createjs.Stage(canvasElement);
+
+      var text = new createjs.Text();
+      text.text = "曲が出来ました";
+      text.color = "red";
+      text.font = "50px Hiragino Kaku Gothic StdN";
+      text.x = w / 2;
+      text.y = h / 2;
+      text.textBaseline = "alphabetic";
+      stage.addChild(text);
+
+      setTween(text);
+
+      createjs.Ticker.setFPS(60);
+      createjs.Ticker.addEventListener("tick", refresh);
+      }
+
+      function setTween(target) {
+      var tween = new createjs.Tween(target, {loop:true});
+      tween.to({rotation:360}, 2000, createjs.Ease.linear);
+      }
+
+      function refresh() {
+        stage.update();
+      }
+    </script>
+  </head>
+  <body onload="init();">
+    <div id="wrapper">
+      <canvas id="demoCanvas" width="1000" height="700"></canvas>
+    </div>
+  </body>
+</html>
