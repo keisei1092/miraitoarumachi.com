@@ -1,0 +1,70 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css)
+@import url(https://fonts.googleapis.com/css?family=Monoton)
+
+*
+  font-family: 'Noto Sans Japanese'
+  font-weight: 100
+  -webkit-font-smoothing: antialiased
+  color: #FFF
+
+html, body
+  width: 100%
+  height: 100%
+
+body
+  width: 100%
+  height: 100%
+  background: #2BC0E4
+  background: -webkit-linear-gradient(to right, #2BC0E4 , #EAECC6)
+  background: linear-gradient(to right, #2BC0E4 , #EAECC6)
+  margin: 0
+
+.flex-parent-column
+  display: flex
+  flex-direction: column
+
+.flex-parent-row
+  display: flex
+  flex-direction: row
+
+.vcenter
+  justify-content: center
+
+.hcenter
+  align-items: center
+
+.flex
+  flex: 1
+
+#wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 100vh
+
+#header // ちゅうよりは、ハンバーガーメニューかな。
+  flex: 1 // ？ 将来的に
+
+#contents
+  flex: 1
+
+#catchphrase
+  font-weight: 100
+  font-size: 50px
+  letter-spacing: 0.4em
+
+#cursor
+  width: 100px
+  font-weight: 100
+  font-size: 50px
+  letter-spacing: 0.4em
+
+#footer
+  height: 100px
+  background-color: rgba(100, 100, 100, 0.6)
+  font-size: 20px
+  font-family: 'Noto Sans Japanese'
+  font-weight: 100
+  letter-spacing: 0.3em
+
+  #footer-contents
