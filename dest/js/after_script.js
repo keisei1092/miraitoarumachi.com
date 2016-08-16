@@ -85,6 +85,7 @@ $('#catchphrase').teletype({
     'iamalive.',
     'seekourfuture',
     'hogefugabar',
+    '消費してきたクソみてぇな日々を',
   ]
 });
 
