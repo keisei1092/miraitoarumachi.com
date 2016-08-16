@@ -42,8 +42,15 @@ body
   justify-content: center
   min-height: 100vh
 
-#header // ちゅうよりは、ハンバーガーメニューかな。
-  flex: 1 // ？ 将来的に
+#header
+  position: absolute
+  top: 20px
+  left: 20px
+  font-weight: 300
+  @media screen and (max-width: 320px)
+    display: none
+  @media screen and (min-width: 321px)
+    font-size: 18px
 
 #contents
   flex: 1
