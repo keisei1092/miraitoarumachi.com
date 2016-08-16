@@ -2,6 +2,7 @@ doctype html
 html
   head
     meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     title keisei
     link(rel='stylesheet', href='./css/main.css')
     // script(type='text/javascript', src='./js/before_script.js')
@@ -10,10 +11,10 @@ html
     #wrapper
       // #header <- ちゅうよりは、ハンバーガーメニューかな。
       section#contents.flex-parent-row.vcenter.hcenter
-        #catchphrase.flex(data-words=['iamalive.', 'seekourfuture'])
-        #cursor.flex
+        #catchphrase
+        span#cursor
       #footer.flex-parent-column.vcenter.hcenter
         #footer-contents
-          &copy; 2016 keisei
+          | &copy; 2016 keisei
     script(src='./js/jquery.min.js')
     script(src='./js/after_script.js')
