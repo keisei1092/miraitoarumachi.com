@@ -43,14 +43,19 @@ body
   min-height: 100vh
 
 #header
-  position: absolute
-  top: 20px
-  left: 20px
-  font-weight: 300
   @media screen and (max-width: 320px)
     display: none
   @media screen and (min-width: 321px)
+    position: absolute
+    top: 20px
+    left: 20px
+    cursor: default
+    opacity: 0.5
     font-size: 18px
+    letter-spacing: 0.75em
+
+  #header__title
+    font-weight: 500
 
 #contents
   flex: 1
